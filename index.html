@@ -12,26 +12,26 @@
 	<script>
 		const pageAttribute = {
 			pageId: window.location.hash,
-			pageTags: ["tst-group-2"]
+			pageTags: ["tst-group-1", "tst-group-2"]
 		};
-  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+		  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
     'cwr',
-    '523dfcdf-ec4d-4c87-98c7-f47e8b5c1765',
+    '8c82da38-412d-4d73-8cd3-15619e84f1d0',
     '1.0.0',
     'us-west-2',
     'https://client.rum.us-east-1.amazonaws.com/1.4.0/cwr.js',
     {
       sessionSampleRate: 1,
-      guestRoleArn: "arn:aws:iam::750664202209:role/RUM-Monitor-us-west-2-750664202209-3655747829461-Unauth",
-      identityPoolId: "us-west-2:3c7a7dba-1d77-48b2-8ec0-1b8bd7345ad7",
-      endpoint: "https://dataplane.rum-gamma.us-west-2.amazonaws.com",
+      guestRoleArn: "arn:aws:iam::750664202209:role/RUM-Monitor-us-west-2-750664202209-1425006649461-Unauth",
+      identityPoolId: "us-west-2:b4171c1f-e3a3-4871-9496-cafd87db42a2",
+      endpoint: "https://dataplane.rum.us-west-2.amazonaws.com",
       telemetries: ["performance","errors","http"],
       allowCookies: true,
       enableXRay: false,
-	                disableAutoPageView: true
+	    	                disableAutoPageView: true
     }
   );
-				     cwr('recordPageView', pageAttribute);
+ cwr('recordPageView', pageAttribute);
 
 </script>
  
